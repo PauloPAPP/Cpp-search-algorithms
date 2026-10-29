@@ -1,4 +1,4 @@
 #include "../src/myheaders.h"
 
 
-// Your ASort function(s) goes here ..
+// Your ASort function(s) go here ..
