@@ -1,5 +1,8 @@
 #include "../src/myheaders.h"
 
 
-// Your BSort function(s) go here
+//by Paulo Piedade
+void shellsort(){
+
+}
 
