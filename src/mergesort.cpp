@@ -2,7 +2,7 @@
 
 
 // Mergesort - recursively divides input array until we get sub-arrays of size 1
-
+void	merge(long d[], long first, long last);
 void	mergesort(long data[], long first, long last) {
 
 			if (first < last) {  // i.e. array is of size 2 or larger
