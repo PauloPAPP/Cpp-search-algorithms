@@ -12,7 +12,7 @@
 #include <iostream>
 #include <ctime>
 
-#include "../Imported Source Code/myheaders.h"
+#include "../src/myheaders.h"
 
 using namespace std;
 

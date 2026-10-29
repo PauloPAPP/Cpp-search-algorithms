@@ -1,24 +1,9 @@
 #include <iostream>
 #include <fstream>
-#include "myheaders.h"
+
+#include "../src/myheaders.h"
 
 using namespace std;
-
-
-// Print preliminary warning about stack space to screen
-
-void	printwarning() {
-
-			cout << endl;
-			cout << "WARNING! WARNING! WARNING!" << endl;
-			cout << "This program declares *very* large arrays. If you have not ";
-			cout << "increased your stack space, expect a segmentation fault." << endl;
-			cout << "In order to increase your stack space, run the following command ";
-			cout << "in this terminal:" << endl;
-			cout << "'ulimit -s 819200'" << endl;
-			
-			return;
-}
 
 
 // Print menu of choices to screen
@@ -28,9 +13,13 @@ void	printmenu() {
 			cout << endl;
 			cout << "Please choose from the following menu:" << endl;
 			cout << "  1: Read input file" << endl;
-			cout << "  2: Sort using bubblesort" << endl;
-			cout << "  3: Sort using mergesort" << endl;
-			cout << "  4: Exit program" << endl;
+			cout << "  2: Sort using Asort" << endl;
+			cout << "  3: Sort using Bsort" << endl;
+			cout << "  4: Sort using Csort" << endl;
+			cout << "  5: Sort using Dsort" << endl;			
+			cout << "  6: Sort using Esort" << endl;
+			cout << "  7: Sort using Fsort" << endl;			
+			cout << "  0: Exit program" << endl;
 			cout << endl << "Enter your choice: ";
 
 		return;
@@ -55,7 +44,7 @@ void	printarray(long data[], long size) {
 // Function returns no. of data items, if file is read successfully. Else,
 // function returns -1.
 
-int		readfile(string infilename, long d1[], long d2[]) {
+int		readfile(string infilename, long d[]) {
 
 			long		i, size;
 			ifstream	infile;
@@ -70,8 +59,7 @@ int		readfile(string infilename, long d1[], long d2[]) {
 			if (!infile.is_open()) { size = -1;}
 			else {
 				for (i = 0; (!infile.eof()) && (i < MAXSIZE); ++i) {
-					infile >> d1[i];
-					d2[i] = d1[i];
+					infile >> d[i];
 				} // for
 				
 				size = i-1; // eof() causes an extra (invalid) number to be read

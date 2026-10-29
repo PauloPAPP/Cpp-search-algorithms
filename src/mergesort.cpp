@@ -1,4 +1,4 @@
-#include "myheaders.h"
+#include "../src/myheaders.h"
 
 
 // Mergesort - recursively divides input array until we get sub-arrays of size 1
