@@ -18,7 +18,7 @@ void	printmenu() {
 			cout << "  4: Sort using heap sort" << endl;
 			cout << "  5: Sort using quick sort" << endl;
 			cout << "  6: Sort using selection sort" << endl;
-			cout << "  7: Sort using shelll sort" << endl;
+			cout << "  7: Sort using shell sort" << endl;
 			cout << "  0: Exit program" << endl;
 			cout << endl << "Enter your choice: ";
 
