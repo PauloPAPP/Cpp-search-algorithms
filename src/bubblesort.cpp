@@ -13,7 +13,7 @@ void bubblesort(long int data[], int n){
 	}
 	return;
 
-	//test comment
+	//test
 }
 
 

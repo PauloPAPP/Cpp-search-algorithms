@@ -9,7 +9,10 @@ CPP_SRCS += \
 ../src/heapsort.cpp \
 ../src/helper_fns.cpp \
 ../src/lab5.cpp \
+<<<<<<< HEAD
 ../src/main.cpp \
+=======
+>>>>>>> branch 'main' of git@github.com:PauloPAPP/Cpp-search-algorithms.git
 ../src/mergesort.cpp \
 ../src/quicksort.cpp \
 ../src/selectionsort.cpp \
@@ -21,7 +24,10 @@ CPP_DEPS += \
 ./src/heapsort.d \
 ./src/helper_fns.d \
 ./src/lab5.d \
+<<<<<<< HEAD
 ./src/main.d \
+=======
+>>>>>>> branch 'main' of git@github.com:PauloPAPP/Cpp-search-algorithms.git
 ./src/mergesort.d \
 ./src/quicksort.d \
 ./src/selectionsort.d \
@@ -33,7 +39,10 @@ OBJS += \
 ./src/heapsort.o \
 ./src/helper_fns.o \
 ./src/lab5.o \
+<<<<<<< HEAD
 ./src/main.o \
+=======
+>>>>>>> branch 'main' of git@github.com:PauloPAPP/Cpp-search-algorithms.git
 ./src/mergesort.o \
 ./src/quicksort.o \
 ./src/selectionsort.o \
@@ -52,7 +61,11 @@ src/%.o: ../src/%.cpp src/subdir.mk
 clean: clean-src
 
 clean-src:
+<<<<<<< HEAD
 	-$(RM) ./src/bubblesort.d ./src/bubblesort.o ./src/combsort.d ./src/combsort.o ./src/heapsort.d ./src/heapsort.o ./src/helper_fns.d ./src/helper_fns.o ./src/lab5.d ./src/lab5.o ./src/main.d ./src/main.o ./src/mergesort.d ./src/mergesort.o ./src/quicksort.d ./src/quicksort.o ./src/selectionsort.d ./src/selectionsort.o ./src/shellsort.d ./src/shellsort.o
+=======
+	-$(RM) ./src/bubblesort.d ./src/bubblesort.o ./src/combsort.d ./src/combsort.o ./src/heapsort.d ./src/heapsort.o ./src/helper_fns.d ./src/helper_fns.o ./src/lab5.d ./src/lab5.o ./src/mergesort.d ./src/mergesort.o ./src/quicksort.d ./src/quicksort.o ./src/selectionsort.d ./src/selectionsort.o ./src/shellsort.d ./src/shellsort.o
+>>>>>>> branch 'main' of git@github.com:PauloPAPP/Cpp-search-algorithms.git
 
 .PHONY: clean-src
 
