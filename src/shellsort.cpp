@@ -2,7 +2,7 @@
 
 
 //by Paulo Piedade
-void shellsort(int data[], int size){
+void shellsort(long int data[], long int size){
 	register int i, j, hCnt, h;
 	int increments[20],k;
 

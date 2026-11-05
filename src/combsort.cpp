@@ -2,7 +2,7 @@
 
 //Kenneth Stettler Comb Sort
 
-void combSort();
+void combsort();
 
 
 
