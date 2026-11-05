@@ -2,6 +2,8 @@
 
 //Kenneth Stettler Comb Sort
 
+//code from data structures and algorithms in c++ by adam drozdek
+
 template<class T>
 void combSort(T data[],const int n) {
 	int step = n, j, k;
