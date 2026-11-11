@@ -2,6 +2,7 @@
 
 //Kenneth Stettler Comb Sort
 
+<<<<<<< HEAD
 //code from data structures and algorithms in c++ by adam drozdek
 
 template<class T>
@@ -23,6 +24,9 @@ void combSort(T data[],const int n) {
 
 
 }
+=======
+void combsort();
+>>>>>>> branch 'main' of git@github.com:PauloPAPP/Cpp-search-algorithms.git
 
 
 

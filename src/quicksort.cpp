@@ -1,6 +1,6 @@
 #include "../src/myheaders.h"
 
-//Kenneth Stettler Quick Sort
+//Kenneth Stettler Quick Sort finished
 
 //code from data structures and algorithms in c++ by adam drozdek
 
