@@ -11,6 +11,8 @@
 
 #include <iostream>
 #include <ctime>
+#include <algorithm>
+#include <iterator>
 
 #include "../src/myheaders.h"
 
@@ -50,19 +52,19 @@ int main() {
 			case 2: // Sort function A
 
                     // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-                    
+                    std::copy(std::begin(data), std::end(data), std::begin(wData));
                     
 					begin_time = clock();   // start cpu timer
 			
 					// Call your Sort function A here to sort the array 'wData''
 			        //  Note that 'wData' is of size 'sz' (see case 1).
-
+					selectionsort(wData, sz);
 
 			
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Selection Sort ran for " << cpu_time_used << " secs.";
 			
 					ofilename = "lab5_A_out.txt";
 					writefile(wData, sz, ofilename);
@@ -79,7 +81,7 @@ int main() {
 			case 3: // Sort function B
 			
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-			        
+					std::copy(std::begin(data), std::end(data), std::begin(wData));
 			        
 					begin_time = clock();   // start cpu timer
 			
@@ -88,13 +90,13 @@ int main() {
 			
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
-
+					bubblesort(wData, sz);
 
 			
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Bubble Sort ran for " << cpu_time_used << " secs.";
 			
 					ofilename = "lab5_B_out.txt";
 					writefile(wData, sz, ofilename);
@@ -111,7 +113,7 @@ int main() {
 			case 4: // Sort function C
 
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-
+					std::copy(std::begin(data), std::end(data), std::begin(wData));
 
 					begin_time = clock();   // start cpu timer
 
@@ -120,13 +122,13 @@ int main() {
 
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
-
+					combsort(wData, sz);
 
 
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(C)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Comb Sort ran for " << cpu_time_used << " secs.";
 
 					ofilename = "lab5_C_out.txt";
 					writefile(wData, sz, ofilename);
@@ -143,7 +145,7 @@ int main() {
 			case 5: // Sort function D
 
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-
+					std::copy(std::begin(data), std::end(data), std::begin(wData));
 
 					begin_time = clock();   // start cpu timer
 
@@ -152,13 +154,13 @@ int main() {
 
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
-
+					mergesort(wData, sz);
 
 
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(D)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Merge Sort ran for " << cpu_time_used << " secs.";
 
 					ofilename = "lab5_D_out.txt";
 					writefile(wData, sz, ofilename);
@@ -175,7 +177,7 @@ int main() {
 			case 6: // Sort function E
 
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-
+					std::copy(std::begin(data), std::end(data), std::begin(wData));
 
 					begin_time = clock();   // start cpu timer
 
@@ -184,13 +186,13 @@ int main() {
 
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
-
+					quicksort(wData, sz);
 
 
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(E)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Quick Sort ran for " << cpu_time_used << " secs.";
 
 					ofilename = "lab5_E_out.txt";
 					writefile(wData, sz, ofilename);
@@ -207,7 +209,7 @@ int main() {
 			case 7: // Sort function F
 
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-
+					std::copy(std::begin(data), std::end(data), std::begin(wData));
 
 					begin_time = clock();   // start cpu timer
 
@@ -216,13 +218,13 @@ int main() {
 
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
-
+					shellsort(wData, sz);
 
 
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "(F)Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Shell Sort ran for " << cpu_time_used << " secs.";
 
 					ofilename = "lab5_F_out.txt";
 					writefile(wData, sz, ofilename);

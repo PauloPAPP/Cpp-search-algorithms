@@ -9,7 +9,6 @@ CPP_SRCS += \
 ../src/heapsort.cpp \
 ../src/helper_fns.cpp \
 ../src/lab5.cpp \
-../src/main.cpp \
 ../src/mergesort.cpp \
 ../src/quicksort.cpp \
 ../src/selectionsort.cpp \
@@ -21,7 +20,6 @@ CPP_DEPS += \
 ./src/heapsort.d \
 ./src/helper_fns.d \
 ./src/lab5.d \
-./src/main.d \
 ./src/mergesort.d \
 ./src/quicksort.d \
 ./src/selectionsort.d \
@@ -33,7 +31,6 @@ OBJS += \
 ./src/heapsort.o \
 ./src/helper_fns.o \
 ./src/lab5.o \
-./src/main.o \
 ./src/mergesort.o \
 ./src/quicksort.o \
 ./src/selectionsort.o \
@@ -52,7 +49,7 @@ src/%.o: ../src/%.cpp src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/bubblesort.d ./src/bubblesort.o ./src/combsort.d ./src/combsort.o ./src/heapsort.d ./src/heapsort.o ./src/helper_fns.d ./src/helper_fns.o ./src/lab5.d ./src/lab5.o ./src/main.d ./src/main.o ./src/mergesort.d ./src/mergesort.o ./src/quicksort.d ./src/quicksort.o ./src/selectionsort.d ./src/selectionsort.o ./src/shellsort.d ./src/shellsort.o
+	-$(RM) ./src/bubblesort.d ./src/bubblesort.o ./src/combsort.d ./src/combsort.o ./src/heapsort.d ./src/heapsort.o ./src/helper_fns.d ./src/helper_fns.o ./src/lab5.d ./src/lab5.o ./src/mergesort.d ./src/mergesort.o ./src/quicksort.d ./src/quicksort.o ./src/selectionsort.d ./src/selectionsort.o ./src/shellsort.d ./src/shellsort.o
 
 .PHONY: clean-src
 
