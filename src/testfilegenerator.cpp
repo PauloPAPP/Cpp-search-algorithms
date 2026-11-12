@@ -5,7 +5,8 @@
 using namespace std;
 
 void testFileGenerator() {
-	ofstream outFile("../'Input Text'/test.txt");
+	ofstream outfile;
+	outfile.open("../'Input Text'/test.txt");
 	int numInputs = 0;
 	cin >> numInputs;
 	// 1. Obtain a random seed from hardware
@@ -18,8 +19,9 @@ void testFileGenerator() {
 	    uniform_int_distribution<int> dist(1, 10000);
 		
 		for (int i = 0; i < numInputs; ++i) {
-		        outFile << dist(gen) << " ";
+		        outfile << dist(gen) << " ";
 				
 		    }
+		outfile.close();
 	
 	}
