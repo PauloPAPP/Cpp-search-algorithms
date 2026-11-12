@@ -13,11 +13,11 @@ void	printmenu() {
 			cout << endl;
 			cout << "Please choose from the following menu:" << endl;
 			cout << "  1: Read input file" << endl;
-			cout << "  2: Sort using bubble sort" << endl;
-			cout << "  3: Sort using comb sort" << endl;
-			cout << "  4: Sort using heap sort" << endl;
-			cout << "  5: Sort using quick sort" << endl;
-			cout << "  6: Sort using selection sort" << endl;
+			cout << "  2: Sort using selection sort" << endl;
+			cout << "  3: Sort using bubble sort" << endl;
+			cout << "  4: Sort using comb sort" << endl;
+			cout << "  5: Sort using heap sort" << endl;
+			cout << "  6: Sort using quick sort" << endl;
 			cout << "  7: Sort using shell sort" << endl;
 			cout << "  0: Exit program" << endl;
 			cout << endl << "Enter your choice: ";
@@ -53,7 +53,7 @@ int		readfile(string infilename, long d[]) {
 			//           ifstream or ofstream object takes a const char*, not
 			//           a string. In compilers that follow the C++11 std or
 			//			 later, we may write instead: infile.open(infilename);
-	
+
 			infile.open(infilename.c_str());
 
 			if (!infile.is_open()) { size = -1;}
@@ -61,13 +61,14 @@ int		readfile(string infilename, long d[]) {
 				for (i = 0; (!infile.eof()) && (i < MAXSIZE); ++i) {
 					infile >> d[i];
 				} // for
-				
+
 				size = i-1; // eof() causes an extra (invalid) number to be read
 				infile.close();
 			} // else
-	
+
 			return size;
 }
+
 
 
 // Write output file to disk from array data[]

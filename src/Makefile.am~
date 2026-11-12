@@ -14,11 +14,17 @@ AM_CFLAGS =\
 bin_PROGRAMS = lab4
 
 lab4_SOURCES = \
-	main.cc \
+	lab5.cpp \
 	myheaders.h \
-	bubblesort.cc \
-	mergesort.cc \
-	helper_fns.cc
+	bubblesort.cpp \
+	mergesort.cpp \
+	helper_fns.cpp \
+	combsort.cpp \
+	heapsort.cpp \
+	quicksortt.cpp \
+	selectionsort.cpp \
+	shellsort.cpp \
+	
 
 lab4_LDFLAGS = 
 

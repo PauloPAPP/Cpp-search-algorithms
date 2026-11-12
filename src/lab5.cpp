@@ -83,7 +83,6 @@ int main() {
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 					std::copy(std::begin(data), std::end(data), std::begin(wData));
 			        
-					begin_time = clock();   // start cpu timer
 			
 
 					begin_time = clock();   // start cpu timer
@@ -115,7 +114,6 @@ int main() {
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 					std::copy(std::begin(data), std::end(data), std::begin(wData));
 
-					begin_time = clock();   // start cpu timer
 
 
 					begin_time = clock();   // start cpu timer
@@ -147,20 +145,19 @@ int main() {
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 					std::copy(std::begin(data), std::end(data), std::begin(wData));
 
-					begin_time = clock();   // start cpu timer
 
 
 					begin_time = clock();   // start cpu timer
 
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
-					mergesort(wData, sz);
+					heapsort(wData, sz);
 
 
 					end_time = clock();		// end cpu timer
 
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
-					cout << endl << "Merge Sort ran for " << cpu_time_used << " secs.";
+					cout << endl << "Heap Sort ran for " << cpu_time_used << " secs.";
 
 					ofilename = "lab5_D_out.txt";
 					writefile(wData, sz, ofilename);
@@ -179,7 +176,6 @@ int main() {
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 					std::copy(std::begin(data), std::end(data), std::begin(wData));
 
-					begin_time = clock();   // start cpu timer
 
 
 					begin_time = clock();   // start cpu timer
@@ -211,7 +207,6 @@ int main() {
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 					std::copy(std::begin(data), std::end(data), std::begin(wData));
 
-					begin_time = clock();   // start cpu timer
 
 
 					begin_time = clock();   // start cpu timer
