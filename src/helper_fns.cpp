@@ -44,7 +44,7 @@ void	printarray(long data[], long size) {
 // Function returns no. of data items, if file is read successfully. Else,
 // function returns -1.
 
-int		readfile(string infilename, long d[]) {
+long		readfile(string infilename, long d[]) {
 
 			long		i, size;
 			ifstream	infile;
@@ -58,7 +58,7 @@ int		readfile(string infilename, long d[]) {
 
 			if (!infile.is_open()) { size = -1;}
 			else {
-				for (i = 0; (!infile.eof()) && (i < MAXSIZE); ++i) {
+				for (i = 0; (!infile.eof()) && (i < 10000000); ++i) {
 					infile >> d[i];
 				} // for
 

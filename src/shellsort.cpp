@@ -17,7 +17,7 @@ void shellsort(long int data[], long int size){
 			for (j = hCnt; j < size;){
 				int tmp = data[j];
 				k=j;
-				while (k - h >= 0 && tmp > data[k-h]){
+				while (k - h >= 0 && tmp < data[k-h]){
 					data[k] = data[k-h];
 					k -= h;
 				}

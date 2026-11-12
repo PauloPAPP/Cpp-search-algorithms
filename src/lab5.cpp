@@ -21,7 +21,7 @@ using namespace std;
 
 int main() {
 	
-	int		choice, sz;
+	long		choice, sz;
 	long	data[MAXSIZE], wData[MAXSIZE];
 	double  begin_time, end_time, cpu_time_used;
 	string  ifilename, ofilename;
@@ -31,16 +31,18 @@ int main() {
 		printmenu();
 		cin >> choice;
 		
+
 		switch (choice) {
 
 			case 1: // Read input file and store data in arrays data1 and data2
                     // The function 'readfile' returns the size of the file that was read
 					// If the file could not be read, 'readfile' returns -1
 				
-					//ifilename = "lab5_input.txt";
+//					ifilename = "lab5_input.txt";
 					testFileGenerator();
-					ifilename = "../'Input Text'/test.txt";
+					ifilename = "test.txt";
 					sz = readfile(ifilename, data);
+
 			
 					if (sz < 0)	 {
 						 cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
@@ -68,7 +70,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "Selection Sort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_A_out.txt";
+					ofilename = "lab5_Selection_out.txt";
 					writefile(wData, sz, ofilename);
 					
 					if (sz < 0)	 {
@@ -99,7 +101,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "Bubble Sort ran for " << cpu_time_used << " secs.";
 			
-					ofilename = "lab5_B_out.txt";
+					ofilename = "lab5_Bubble_out.txt";
 					writefile(wData, sz, ofilename);
 					
 					if (sz < 0)	 {
@@ -130,7 +132,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "Comb Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_C_out.txt";
+					ofilename = "lab5_Comb_out.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {
@@ -161,7 +163,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "Heap Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_D_out.txt";
+					ofilename = "lab5_Heap_out.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {
@@ -192,7 +194,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "Quick Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_E_out.txt";
+					ofilename = "lab5_Quick_out.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {
@@ -223,7 +225,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "Shell Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_F_out.txt";
+					ofilename = "lab5_Shell_out.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {

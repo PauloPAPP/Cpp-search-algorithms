@@ -10,7 +10,7 @@ using namespace std;
 void	printmenu();
 void	testFileGenerator();
 void	printarray(long data[], long size);
-int		readfile(string infilename, long data[]);
+long		readfile(string infilename, long data[]);
 int		writefile(long data[], long size, string outfilename);
 void	swap(long& x, long& y);
 void	selectionsort(long int arr[],long int size);
