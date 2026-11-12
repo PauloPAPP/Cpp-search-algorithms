@@ -27,4 +27,3 @@ void shellsort(long int data[], long int size){
 		}
 	}
 }
-
