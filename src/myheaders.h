@@ -8,6 +8,7 @@
 using namespace std;
 
 void	printmenu();
+void	testFileGenerator();
 void	printarray(long data[], long size);
 int		readfile(string infilename, long data[]);
 int		writefile(long data[], long size, string outfilename);
