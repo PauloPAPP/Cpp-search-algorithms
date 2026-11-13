@@ -6,8 +6,9 @@ void selectionsort(long int data[], long int size){
 		for(j = i+1, least = i; j < size; j++){
 			if (data[j] < data[least])
 				least = j;
+		}
 		if (i != least)
 			swap((data[least]), (data[i]));
 		}
 	}
-}
+

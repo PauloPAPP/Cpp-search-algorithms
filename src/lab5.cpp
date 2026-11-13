@@ -13,11 +13,11 @@
 #include <ctime>
 #include <algorithm>
 #include <iterator>
+#include <bits/stdc++.h>
 
 #include "../src/myheaders.h"
 
 using namespace std;
-
 
 int main() {
 	
@@ -40,7 +40,7 @@ int main() {
 				
 //					ifilename = "lab5_input.txt";
 					testFileGenerator();
-					ifilename = "test.txt";
+					ifilename = "random_numbers.txt";
 					sz = readfile(ifilename, data);
 
 			
@@ -53,7 +53,7 @@ int main() {
 			
 					break;
 
-			case 2: // Sort function A
+			case 2: {// Sort function A
 
                     // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
                     std::copy(std::begin(data), std::end(data), std::begin(wData));
@@ -73,6 +73,21 @@ int main() {
 					ofilename = "lab5_Selection_out.txt";
 					writefile(wData, sz, ofilename);
 					
+					bool actually_sorted = true;
+						for (long i = 0; i < sz - 1; ++i) {
+					    if (wData[i] > wData[i+1]) {
+					        cout << endl << "Out of order at index " << i << ": " << wData[i] << " > " << wData[i+1];
+					        actually_sorted = false;
+					        break;
+					    }
+					}
+
+					if (std::is_sorted(wData, wData + sz)) {
+											cout << endl << "Validation: Array is sorted correctly!";
+										} else {
+											cout << endl << "Validation: ERROR - Array is NOT sorted!";
+										}
+
 					if (sz < 0)	 {
 						 cerr << endl << "ERROR: Output File could not be opened." <<endl;
 						 cerr << "       Quitting Now!" << endl << endl;
@@ -81,6 +96,7 @@ int main() {
 					else cout << endl << "Output written to " << ofilename << endl;
 			
 					break;
+			}
 
 			case 3: // Sort function B
 			
@@ -104,6 +120,12 @@ int main() {
 					ofilename = "lab5_Bubble_out.txt";
 					writefile(wData, sz, ofilename);
 					
+					if (std::is_sorted(wData, wData + sz)) {
+											cout << endl << "Validation: Array is sorted correctly!";
+										} else {
+											cout << endl << "Validation: ERROR - Array is NOT sorted!";
+										}
+
 					if (sz < 0)	 {
 						 cerr << endl << "ERROR: Output File could not be opened." <<endl;
 						 cerr << "       Quitting Now!" << endl << endl;
@@ -135,6 +157,12 @@ int main() {
 					ofilename = "lab5_Comb_out.txt";
 					writefile(wData, sz, ofilename);
 
+					if (std::is_sorted(wData, wData + sz)) {
+											cout << endl << "Validation: Array is sorted correctly!";
+										} else {
+											cout << endl << "Validation: ERROR - Array is NOT sorted!";
+										}
+
 					if (sz < 0)	 {
 						 cerr << endl << "ERROR: Output File could not be opened." <<endl;
 						 cerr << "       Quitting Now!" << endl << endl;
@@ -163,8 +191,17 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "Heap Sort ran for " << cpu_time_used << " secs.";
 
+					//ADD ISSORTED HERE
+					//cout <<
+
 					ofilename = "lab5_Heap_out.txt";
 					writefile(wData, sz, ofilename);
+
+					if (std::is_sorted(wData, wData + sz)) {
+											cout << endl << "Validation: Array is sorted correctly!";
+										} else {
+											cout << endl << "Validation: ERROR - Array is NOT sorted!";
+										}
 
 					if (sz < 0)	 {
 						 cerr << endl << "ERROR: Output File could not be opened." <<endl;
@@ -197,6 +234,12 @@ int main() {
 					ofilename = "lab5_Quick_out.txt";
 					writefile(wData, sz, ofilename);
 
+					if (std::is_sorted(wData, wData + sz)) {
+											cout << endl << "Validation: Array is sorted correctly!";
+										} else {
+											cout << endl << "Validation: ERROR - Array is NOT sorted!";
+										}
+
 					if (sz < 0)	 {
 						 cerr << endl << "ERROR: Output File could not be opened." <<endl;
 						 cerr << "       Quitting Now!" << endl << endl;
@@ -227,6 +270,12 @@ int main() {
 
 					ofilename = "lab5_Shell_out.txt";
 					writefile(wData, sz, ofilename);
+
+					if (std::is_sorted(wData, wData + sz)) {
+											cout << endl << "Validation: Array is sorted correctly!";
+										} else {
+											cout << endl << "Validation: ERROR - Array is NOT sorted!";
+										}
 
 					if (sz < 0)	 {
 						 cerr << endl << "ERROR: Output File could not be opened." <<endl;

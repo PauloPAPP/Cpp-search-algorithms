@@ -6,13 +6,14 @@ using namespace std;
 
 void testFileGenerator() {
 	long numInputs = 0;
+	cout << "Enter the size number Array you would like to sort." << endl;
 	cin >> numInputs;
 	std::random_device rd;
 	    std::mt19937 gen(rd());
 	    std::uniform_int_distribution<int> dist(-MAXSIZE, MAXSIZE);
 
 	    // 2. Open a file for writing (creates it if it doesn't exist)
-	    std::ofstream outFile("test.txt");
+	    std::ofstream outFile("random_numbers.txt");
 
 	    // 3. Verify the file opened properly
 	    if (!outFile) {
