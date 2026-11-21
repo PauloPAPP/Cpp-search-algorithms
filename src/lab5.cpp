@@ -1,3 +1,9 @@
+// Kenneth Stettler Joshua Heyel Paulo Piedade
+// Lab 5 ECE-2161-001
+//This is the the main file in which main is held in and calls all functions from other
+	//codes. It is used to test sorting time algorithms
+
+
 // Copyright (C) 2025 Sarvesh Kulkarni <sarvesh.kulkarni@villanova.edu>
 // If you are a student in the ECE 2161 lab, you may use this code.
 // Permission is NOT granted to use this code for non-educational purposes.

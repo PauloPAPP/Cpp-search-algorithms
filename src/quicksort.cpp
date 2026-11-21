@@ -1,8 +1,12 @@
+//Kenneth Stettler
+// Lab 5 ECE-2161-001
+//creating the quick sort function
+
 #include "../src/myheaders.h"
 
 //Kenneth Stettler Quick Sort finished
 
-//code from data structures and algorithms in c++ by adam drozdek
+//code learned from data structures and algorithms in c++ by adam drozdek
 
 #include "../src/myheaders.h"
 

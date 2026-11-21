@@ -1,3 +1,7 @@
+//Kenneth Stettler Joshua Heyel Paulo Piedade
+// Lab 5 ECE-2161-001
+//creating a function in which generates an array that is of whichever size the user likes
+	//which allows greater variance in what is possible
 #include <iostream>
 #include <random>
 #include <fstream>

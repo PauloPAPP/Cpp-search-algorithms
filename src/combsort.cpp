@@ -1,3 +1,6 @@
+//Kenneth Stettler
+// Lab 5 ECE-2161-001
+//Creating the comb sort function
 #include "../src/myheaders.h"
 
 //Kenneth Stettler Comb Sort

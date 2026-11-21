@@ -1,3 +1,6 @@
+//Kenneth Stettler Joshua Heyel Paulo Piedade
+// Lab 5 ECE-2161-001
+//adding all headers and prototypes
 // DO NOT forget to add the prototypes for your ASort, BSort, and other functions below!
 
 

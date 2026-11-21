@@ -1,3 +1,6 @@
+//Kenneth Stettler Joshua Heyel Paulo Piedade
+// Lab 5 ECE-2161-001
+//creating helper functions that are called
 #include <iostream>
 #include <fstream>
 

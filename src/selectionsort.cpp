@@ -1,3 +1,6 @@
+//Paulo Piedade
+// Lab 5 ECE-2161-001
+//creating the selection sort function
 #include "../src/myheaders.h"
 
 //by Paulo Piedade
